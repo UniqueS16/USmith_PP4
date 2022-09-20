@@ -23,6 +23,7 @@ void draw() {
   ellipse(x+width/2, y+height/2, 16, 16); 
 
   // Increment the angle
-  theta -= 0.1;
-  
+  theta -= 0.01;
+  if (theta < - 1)
+  theta = 0;
 }
